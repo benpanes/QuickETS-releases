@@ -3,10 +3,15 @@
 A small Android home-screen widget that shows the next arrivals at an Edmonton Transit Service (ETS) stop, drawn like the orange LED boards in ETS stations.
 
 - Pick a stop by **name** or number, or from stops near you. Each shows its direction (northbound, southbound, ...).
-- It refreshes when you **unlock your phone**, so it is current when you look at it and uses nothing while the phone is asleep.
+- It updates when you **tap its refresh icon** or open its menu, and runs nothing in the background (no service, no notification). The widget shows clock times, so they never go stale between updates.
 - Tap it to see every arrival in the next 20 minutes, and filter by **route and destination** (for example, only `8 Abbottsfield`, not `8 University`).
 - Transit centres with many platforms (Coliseum, Mill Woods, ...) can be shown **all together**, with the platform letter beside each arrival, or filtered to just the bays you use.
+- A **two-stop commute** can switch by itself: the morning stop before noon, the stop you catch home after, with no tapping.
 - Live times from ETS where available, the published timetable otherwise.
+- **Delays:** late buses are red with the delay in brackets after the time, like `5:02(+10)`; early buses are yellow.
+- **Follow a trip:** tap an arrival in the widget menu to see the bus's whole journey, pick a stop after yours, and follow it there. Until the bus arrives, the widget (and the watch tile) show only that trip, with when it leaves and when it reaches your destination. The destination is remembered for next time.
+- **Past departures** can be listed, dimmed, in the widget menu (you choose how far back, or turn it off).
+- A **Wear OS tile** can show the same board. The watch app is a separate install and is not part of these downloads.
 
 ## Install
 
@@ -20,11 +25,7 @@ The first time you pick a stop, the app downloads ETS's timetable (about 18 MB, 
 
 ### Updating
 
-Open QuickETS and tap **Check for updates**. It also looks quietly when you open it. New versions install over the old one and keep your widgets and settings.
-
-### The small notification
-
-Android only lets an app notice "the phone was unlocked" while it shows a notification. QuickETS's is set to the lowest priority, and you can switch it off in the app's **Notification settings** without breaking anything.
+Open QuickETS, tap **Settings**, then **Check for updates**. It also looks quietly when you open it and shows a banner when a newer version exists. New versions install over the old one and keep your widgets and settings.
 
 ## Privacy
 
